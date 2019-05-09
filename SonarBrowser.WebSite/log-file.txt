@@ -1,0 +1,21 @@
+2018-01-26 16:21:41,885 [1] INFO  ASP.global_asax [(null)] - Application start
+2018-01-26 16:22:24,568 [5] ERROR SonarBrowser.SonarBrowserOrchestrator.Services.SonarBrowserOrchestrator [(null)] - 
+2018-01-26 16:23:49,094 [1] INFO  ASP.global_asax [(null)] - Application start
+2018-01-26 16:24:07,410 [5] ERROR SonarBrowser.SonarBrowserOrchestrator.Services.SonarBrowserOrchestrator [(null)] - 
+System.InvalidOperationException: Sequence contains no elements
+   à SonarBrowser.Sonar.Service.SonarConnector.<GetChangeSet>d__8.MoveNext() dans C:\Users\pierre.missiaen\Source\Repos\SonarBrowser\SonarBrowser.Sonar.Services\SonarConnector.cs:ligne 86
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à SonarBrowser.SonarBrowserOrchestrator.Services.SonarBrowserOrchestrator.<GetChangeSetAsync>d__11.MoveNext() dans C:\Users\pierre.missiaen\Source\Repos\SonarBrowser\SonarBrowser.Services\SonarBrowserOrchestrator.cs:ligne 138
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à SonarBrowser.SonarBrowserOrchestrator.Services.SonarBrowserOrchestrator.<DecorateIssueSonar_With_ChangeSetAndCodeProject>d__8.MoveNext() dans C:\Users\pierre.missiaen\Source\Repos\SonarBrowser\SonarBrowser.Services\SonarBrowserOrchestrator.cs:ligne 90
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à SonarBrowser.SonarBrowserOrchestrator.Services.SonarBrowserOrchestrator.<GetIssuesSonar>d__6.MoveNext() dans C:\Users\pierre.missiaen\Source\Repos\SonarBrowser\SonarBrowser.Services\SonarBrowserOrchestrator.cs:ligne 50

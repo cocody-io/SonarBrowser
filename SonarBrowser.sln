@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarBrowser.ActiveDirectory.Service", "SonarBrowser.ActiveDirectory.Service\SonarBrowser.ActiveDirectory.Service.csproj", "{4E6071CD-4290-45A2-889F-B800647B2344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarBrowser.WebSite", "SonarBrowser.WebSite\SonarBrowser.WebSite.csproj", "{EAD12CB5-0B96-42AB-8706-F76D5D300683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarBrowser.SonarBrowserOrchestrator.Services", "SonarBrowser.Services\SonarBrowser.SonarBrowserOrchestrator.Services.csproj", "{BF7EB1CD-8FA3-4351-A67B-FD7F399E0CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarBrowser.Sonar.Services", "SonarBrowser.Sonar.Services\SonarBrowser.Sonar.Services.csproj", "{7BE6FE15-1C3D-4904-900F-2E55770F2E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarBrowser.Tfs.Service", "SonarBrowser.Tfs.Service\SonarBrowser.Tfs.Service.csproj", "{8162A781-55B0-492C-8E3D-3B5476E5A084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TfsOnlineTester", "TfsOnlineTester\TfsOnlineTester.csproj", "{1FA6AA4C-7DC9-4227-A3D2-AC0B9F9496B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarBrowser.Infrastructure", "SonarBrowser.Infrastructure\SonarBrowser.Infrastructure.csproj", "{B670D3FE-504A-4104-9091-C7E42417A455}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E6071CD-4290-45A2-889F-B800647B2344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6071CD-4290-45A2-889F-B800647B2344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6071CD-4290-45A2-889F-B800647B2344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6071CD-4290-45A2-889F-B800647B2344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD12CB5-0B96-42AB-8706-F76D5D300683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD12CB5-0B96-42AB-8706-F76D5D300683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD12CB5-0B96-42AB-8706-F76D5D300683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD12CB5-0B96-42AB-8706-F76D5D300683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7EB1CD-8FA3-4351-A67B-FD7F399E0CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7EB1CD-8FA3-4351-A67B-FD7F399E0CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7EB1CD-8FA3-4351-A67B-FD7F399E0CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7EB1CD-8FA3-4351-A67B-FD7F399E0CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE6FE15-1C3D-4904-900F-2E55770F2E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE6FE15-1C3D-4904-900F-2E55770F2E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE6FE15-1C3D-4904-900F-2E55770F2E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE6FE15-1C3D-4904-900F-2E55770F2E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8162A781-55B0-492C-8E3D-3B5476E5A084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8162A781-55B0-492C-8E3D-3B5476E5A084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8162A781-55B0-492C-8E3D-3B5476E5A084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8162A781-55B0-492C-8E3D-3B5476E5A084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA6AA4C-7DC9-4227-A3D2-AC0B9F9496B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA6AA4C-7DC9-4227-A3D2-AC0B9F9496B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA6AA4C-7DC9-4227-A3D2-AC0B9F9496B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA6AA4C-7DC9-4227-A3D2-AC0B9F9496B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B670D3FE-504A-4104-9091-C7E42417A455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B670D3FE-504A-4104-9091-C7E42417A455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B670D3FE-504A-4104-9091-C7E42417A455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B670D3FE-504A-4104-9091-C7E42417A455}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4FF3720-FBD1-4969-BC80-9A3F4DADAA9C}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

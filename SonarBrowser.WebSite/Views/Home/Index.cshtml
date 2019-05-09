@@ -1,0 +1,89 @@
+﻿@model SonarBrowser.WebSite.ViewModel.IssuesSonarViewModel
+
+
+<form method="post" action="@Url.Action("report","home")">
+    <div class="input-group input-daterange" style="margin-top:30px;">
+        <div class="input-group-addon">From</div>
+        @Html.TextBoxFor(_ => _.DateFrom, new { @class = "form-control" })
+        <div class="input-group-addon">To</div>
+        @Html.TextBoxFor(_ => _.DateTo, new { @class = "form-control" })
+        <input type="submit" class="btn" value="Afficher" style="margin-left:20px;width:100px;" />
+    </div>
+</form>
+
+<form method="post" action="@Url.Action("DownloadCSV","home")">
+    <input type="hidden" class="form-control" id="dateFromHid" name="dateFrom">
+    <input type="hidden" class="form-control" id="dateToHid" name="dateTo">
+
+    <div style="text-align:right;">
+        <input type="submit" class="btn" value="Download csv" style="width:150px;" />
+    </div>
+    @if (Model?.Issues?.IssueSet != null)
+    {
+        <div style="text-align:left;margin-top: -18px;display: block;">
+            <span style="color: white; padding: 2px;  background-color: #afccb3;">&nbsp;Nombres de resultats : @(Model.Issues.IssueSet.Count()) issues&nbsp;</span>
+        </div>
+    }
+</form>
+
+<div class="wrapper-data-sonar">
+
+    <table width="100%" id="issuesTableId" class="display compact" cellspacing="0">
+        <thead>
+            <tr>
+                <td>CreationDate</td>
+                <td>User</td>
+                <td>Groupe AD</td>
+                <td>Code projet</td>
+                <td>ChangeSet</td>
+                <td>Nombre de ligne de code</td>
+                <td>Type d'erreur</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model?.Issues?.IssueSet != null)
+            {
+                foreach (var item in Model.Issues.IssueSet)
+                {
+                    <tr>
+                        <td>@Html.Raw(item.IssueDetail.creationDate)</td>
+                        <td>@Html.Raw(item.IssueDetail.assignee)</td>
+                        <td>@Html.Raw(item.ADGroup)</td>
+                        <td>@Html.Raw(item.CodeProject)</td>
+                        <td>@Html.Raw(item.ChangetSet)</td>
+                        <td>@Html.Raw(item.CodeLineCountForChangeSet)</td>
+                        <td>@Html.Raw(item.IssueDetail.rule)</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+            $(document).ready(function () {
+
+                $('#issuesTableId').DataTable({
+                    "pageLength": 50
+                });
+
+                var d = new Date();
+                $('#DateFrom').datepicker({ format: 'dd/mm/yyyy' });
+                $('#DateFrom').datepicker({ todayHighlight: true });
+                $('#DateTo').datepicker({ format: 'dd/mm/yyyy' });
+                $('#DateTo').datepicker({ todayHighlight: true });
+
+                $('#dateToHid').val($("#DateTo").val());
+                $('#dateFromHid').val($("#DateFrom").val());
+
+                $("#DateFrom").change(function () {
+                    $('#dateFromHid').val($("#DateFrom").val())
+                });
+
+                $("#DateTo").change(function () {
+                    $('#dateToHid').val($("#DateTo").val())
+                });
+            });
+    </script>
+}
